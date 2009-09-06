@@ -7,8 +7,8 @@ This project has no plan and was created after an exchange on the FG mailing lis
 
 Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
 
-==Minimum Controls==
-Lets start with a typical hypothetical basic training aircraft and the minimum control surfaces required to fly.
+==Flight==
+Lets start with a typical hypothetical basic training aircraft and the minimum control surfaces required to achieve flying and landing.
 * Engine start
 * Brakes
 * Throttle
