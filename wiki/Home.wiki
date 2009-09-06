@@ -1,9 +1,9 @@
 A playground for interfacing Arduino and Flight Gear. Both projects are open source, are popular and underactive development.
 
  * *Arduino* - is a microcontroller at [http://www.arduino.cc/ arduino.cc]
-* *Flight Gear* - is flight simulator at [http://wiki.flightgear.org flightgear.org]
+ * *Flight Gear* - is flight simulator at [http://wiki.flightgear.org flightgear.org]
 
-This project is at the pre plan planning stage and was created after an exchange on the FG mailing list so ideas could be shared, so if you are interested then please join the fun.
+This project has no plan and was created after an exchange on the FG mailing list so ideas could be shared. Through collaboration it might end up being of some purpose so if you interested please join in the fun.
 
 Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
 
