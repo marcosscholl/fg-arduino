@@ -1,0 +1,32 @@
+A playground for interfacing Arduino and Flight Gear. Both projects are open source, are popular and underactive development.
+
+ * *Arduino* - is a microcontroller at [http://www.arduino.cc/ arduino.cc]
+* *Flight Gear* - is flight simulator at [http://wiki.flightgear.org flightgear.org]
+
+This project is at the pre plan planning stage and was created after an exchange on the FG mailing list so ideas could be shared, so if you are interested then please join the fun.
+
+Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
+
+==Minimum Controls==
+Lets start with a typical hypothetical basic training aircraft and the minimum control surfaces required to fly.
+* Engine start
+* Brakes
+* Throttle
+* Rudder
+* Yoke 
+* Flaps
+* maybe landing gear, wipers, etc etc
+
+==Arduino Board==
+An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove has 
+* 14 digital pins configurable as either input or output
+* 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
+* An USB connector to interface with a PC (also provides power)
+
+==Flight Gear==
+A full on flight simulator enviroment running can send/recieve data over a variety of protocols which can be set at startup.
+* Multiplayer - transmits byte packets in multiplayer mode
+* http - interface with a webbrowser
+* telnet - good olde telnet
+* sockets - recive/transmit/bidirection on a socket. Any number of sockets can be setup.
+* serial - communication to USB and serial
