@@ -1,3 +1,4 @@
+#sidebar wiki_sidebar
 ==Arduino (AR)==
 
 Please prefix all Arduino related pages with *`AR_`*
