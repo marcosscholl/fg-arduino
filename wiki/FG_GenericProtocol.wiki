@@ -1,0 +1,5 @@
+#summary The generic flightgear protocol
+
+= Introduction =
+
+This is a basic intro on how to create a protocol to FG over a socket.
