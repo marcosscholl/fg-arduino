@@ -32,9 +32,9 @@ The other extreme is a throttle or rudder pedals need to be more real time. It i
 == System Components == 
 
 The simpit script is having to talk to three devices:-
-  * Arduino via serial port
-  * FlightGear via the generic protocol
-  * Telnet interface for debugging and expansion to other programs.<br>
+ * Arduino via serial port
+ * FlightGear via the generic protocol
+ * Telnet interface for debugging and expansion to other programs.<br>
 We might need a glue script to allow the simpit script to connect to another server. This should be fairly straight forward but considered out of scope for the time being.
 
 
@@ -72,6 +72,7 @@ Requirements:
   # landing gear is connected to Pin3.
   # Landing gear light is connectted to pin4.
 
+Data flow as follows:-
   # Arduino has noted that the state of Pin3 has changed and sends an update to the Host PC as follows:<br>_(pin3=1);_
   # The computer waits for the semicolon and then parses the string to obtain the substrings pin3 and 1.
   # The computer then processes that pair to assemble a string to be sent to the FlightGear instance. <br> _1:400:0_<br> Where the first column is the part of the string which we have altered.
