@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
+#summary FlightGear main page
 
- * [FG_GenericProtocol]
+To make the wiki namespace clean, please prefix all FlightGear relates pages with FG_ 
 
-
+ * [FG_GenericProtocolExample] - explanation of how to set up a socket
