@@ -1,11 +1,17 @@
-#summary FlightGear (FG) main page
+
 
 _Prefix all FlightGear related pages with_ *FG_* 
 
-===Links===
- * Homepage - http://flightgear.org
- * Wiki - http://wiki.flightgear.org/
+
+==FlightGear==
+A full on flight simulator enviroment running can send/recieve data over a variety of protocols which can be set at startup.
+ * Multiplayer - transmits byte packets in multiplayer mode
+ * http - interface with a webbrowser
+ * telnet - good olde telnet
+ * sockets - recive/transmit/bidirection on a socket. Any number of sockets can be setup.
+ * serial - communication to USB and serial
+ * [FlightGear] page
 
 
-
- * [FG_GenericProtocolExample] - explanation of how to set up a socket
+#summary FlightGear (FG) main page
+#sidebar TOC
