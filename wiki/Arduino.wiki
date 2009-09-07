@@ -11,5 +11,11 @@ An Arduino board eg the [http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove D
  * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
  * An USB connector to interface with a PC (also provides power)
 
+The Arduino uses a serial to USB bridge chip which presents a virtual serial port to the host computer. While the serial port appears to be rather slow, the latency of the serial port is low and the amount of data that is being sent is very minimal.
 
 http://arduino.cc/en/uploads/Main/ArduinoDuemilanove.jpg
+
+=== Optimisations === 
+As a suggested solution, we will not be constantly sending the status of the controls, instead we only update the host when something changes or the system asks. This improves the latency as the serial link is not saturated.
+
+The script that is parsing the information, should be checking to ensure that data is not "flooded" down the serial port. This will lead to more error codes from the Arduino.  
