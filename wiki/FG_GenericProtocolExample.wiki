@@ -1,25 +1,21 @@
-#summary One-sentence summary of this page.
+#summary The intention of this tutorial is to demonstrate how to create a socket transmitting some FlightGear data live as its running.
 
+=Backgrounder=
+FG can transmit data to either a socket or serial port as its running. This is defined in an xml file.
 
-==Tutorial - Setting up a gerenic socket with a custom protocol==
-
-The intention of this tutorial is to demonstrate how to create a socket transmitting some FlightGear data live as its running.
-
-For this exercise we name it the '''abc-protocol''' and the properties were interested in are:
-# the altitude above ground
-# the position of the elevator
-# the mode of the altitude hold in the autopilot
-* and refreshing five times a second 
-* on port 6789 
-* as udp packets 
-* and read the other side of the wire as
- 253.256\t     elevator=1.3\t   aoa-hold\n
+For this exercise we name it the *abc-protocol* and the data/properties were interested in are:
+ * the altitude above ground
+ * the position of the elevator
+ * the mode of the altitude hold in the autopilot
+ * and refreshing five times a second 
+ * on port 6789 
+ * as udp packets 
+ * and read the other side of the wire as `253.256\t     elevator=1.3\t   aoa-hold\n`
 
 ==Finding the nodes in the tree==
-The first step is to find where the nodes are in the property tree and unless your familiar with the property tree, then one of the easiest things to do is to launch FlighGear with a httpd server, so that the tree can be browsed to find the node locations. Start FlightGear with:
- fgfs --httpd=5400 
-which will start the webserver on port 5400, then point a web browser at
-http://localhost:5400
+The first step is to find where the nodes are in the FG property tree and unless your familiar with the structure of property tree, then one of the easiest things to do is to launch FG with a httpd server, so that the tree can be browsed to find the node locations. Start FG with:
+`fgfs --httpd=5400` 
+which will start the webserver on port 5400, then point a web browser at http://localhost:5400
 
 By navigating the tree its discovered that the properties were interested in are at
 #'''/position/altitude-agl-ft'''
