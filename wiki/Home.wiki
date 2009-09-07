@@ -1,9 +1,15 @@
 A playground for interfacing Arduino and Flight Gear. Both projects are open source, are popular and underactive development.
 
- * *Arduino* - is a microcontroller at [http://www.arduino.cc/ arduino.cc]
- * *Flight Gear* - is flight simulator at [http://wiki.flightgear.org flightgear.org]
+ * *[Arduino]* - is a microcontroller at [http://www.arduino.cc/ arduino.cc]
+ * *[FlightGear Flight Gear]* - is flight simulator at [http://wiki.flightgear.org flightgear.org]
 
-This project has no plan and was created after an exchange on the FG mailing list so ideas could be shared. Through collaboration it might end up being of some purpose so if you interested please join in the fun.
+
+==Collaboration Enviroment==
+How to make them work together is the interesting part, so after some research on the environment the following has been setup to get started.
+
+ * *fg-ardunio* project here on code.google.com. This is for wiki and issues.
+ * *fg-arduino* code hosting at github.com - http://github.com/ac001/fg-arduino/
+ * [User_pedro_hosting_why] Why the above combination] and any other ideas are welcome.
 
 Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
 
@@ -25,10 +31,3 @@ An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDu
  * [Arduino] page
 
 [FlightGear]
-
-
-==Collaboration==
-How to make them work together is the interesting part, so after some research on the enviroment the following has been setup ([Project Hosting]how that was decided)
-
- * *fg-ardunio* project here on code.google.com. This is for wiki and issues.
- * *fg-arduino* code hosting at github.com - http://github.com/ac001/fg-arduino/
