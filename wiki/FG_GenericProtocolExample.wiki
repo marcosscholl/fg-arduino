@@ -64,7 +64,7 @@ Below is the example abc-protocol.xml file. This file needs to be located within
 
 The tags are briefly described as
 =====output=====
-Contains the "formatting" protocol for output. Note that the same file can contain an <input> section also for mapping input protocol/formatting (tutorial maybe soon).
+Contains the "formatting" protocol for output. Note that the same file can contain an *input* section also for mapping input protocol/formatting (tutorial maybe soon).
 
 =====line_separator=====
 What character(s) to use as a delimiter to "end" our line/blob of data containing the three values. In this example its '''newline''', but '''\n''' is also acceptable as would another other ascii characters, eg '''##EOL##'''.
@@ -79,7 +79,7 @@ Within each chuck the tags are described as
 =====name=====
  - this is for reference and ease of use, is not necassary and, its not transmitted (eg a _notes_ tag). It could be useful elsewhere though eg a shared configuration file with another application.
 
-=====node>=====
+=====node=====
 - the property node.
 =====type=====
 - this is the type of value needed for formatting. In our example the autopilot is a string, whilst the other two values as float. Not setting the type can leads to strange stuff happening.
