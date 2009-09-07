@@ -18,9 +18,9 @@ The first step is to find where the nodes are in the FG property tree and unless
 which will start the webserver on port 5400, then point a web browser at http://localhost:5400
 
 By navigating the tree its discovered that the properties were interested in are at
-#'''/position/altitude-agl-ft'''
-#'''/surface-positions/elevator-pos-norm'''
-#'''/autopilot/locks/altitude'''
+  */position/altitude-agl-ft
+  */surface-positions/elevator-pos-norm
+  */autopilot/locks/altitude
 
 
 ==Creating the .xml file==
@@ -28,7 +28,8 @@ Below is the example abc-protocol.xml file. This file needs to be located within
 
 '''/data/Protocol/abc-protocol.xml''' 
 
- <?xml version="1.0"?>
+{{{
+<?xml version="1.0"?>
  <PropertyList>
  <generic>
     <output>
@@ -59,6 +60,7 @@ Below is the example abc-protocol.xml file. This file needs to be located within
     </output>
  </generic>
  </PropertyList>
+}}}
 
 The tags are briefly described as
 =====<output>=====
