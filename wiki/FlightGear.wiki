@@ -1,5 +1,11 @@
 #summary FlightGear main page
 
-To make the wiki namespace clean, please prefix all FlightGear relates pages with FG_ 
+To make the wiki namespace clean, please prefix all FlightGear related pages with FG_ 
+
+===Links===
+ * Homepage - http://flightgear.org
+ * Wiki - http://wiki.flightgear.org/
+
+
 
  * [FG_GenericProtocolExample] - explanation of how to set up a socket
