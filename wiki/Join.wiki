@@ -1,6 +1,6 @@
 #summary How to get in contact and join the project
 
-One of the things that google code hosting coes not allow as yet is to contact the developers. This imho is a failing.
+One of the things that google code hosting does not allow as yet is to contact the developers. (considered a big limitation).
 
 So please send an email to
 
