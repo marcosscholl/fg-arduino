@@ -1,0 +1,182 @@
+#summary One-sentence summary of this page.
+
+
+==Tutorial - Setting up a gerenic socket with a custom protocol==
+
+The intention of this tutorial is to demonstrate how to create a socket transmitting some FlightGear data live as its running.
+
+For this exercise we name it the '''abc-protocol''' and the properties were interested in are:
+# the altitude above ground
+# the position of the elevator
+# the mode of the altitude hold in the autopilot
+* and refreshing five times a second 
+* on port 6789 
+* as udp packets 
+* and read the other side of the wire as
+ 253.256\t     elevator=1.3\t   aoa-hold\n
+
+==Finding the nodes in the tree==
+The first step is to find where the nodes are in the property tree and unless your familiar with the property tree, then one of the easiest things to do is to launch FlighGear with a httpd server, so that the tree can be browsed to find the node locations. Start FlightGear with:
+ fgfs --httpd=5400 
+which will start the webserver on port 5400, then point a web browser at
+http://localhost:5400
+
+By navigating the tree its discovered that the properties were interested in are at
+#'''/position/altitude-agl-ft'''
+#'''/surface-positions/elevator-pos-norm'''
+#'''/autopilot/locks/altitude'''
+
+
+==Creating the .xml file==
+Below is the example abc-protocol.xml file. This file needs to be located within the FlightGear data directory structure at
+
+'''/data/Protocol/abc-protocol.xml''' 
+
+ <?xml version="1.0"?>
+ <PropertyList>
+ <generic>
+    <output>
+       <line_separator>newline</line_separator>
+       <var_separator>tab</var_separator>
+  
+       <chunk>
+          <name>altitude above ground</name>
+          <node>/position/altitude-agl-ft</node>
+          <type>float</type>
+          <format>%03.2f</format>
+        </chunk>
+  
+       <chunk>
+          <name>elevator position</name>
+          <node>/surface-positions/elevator-pos-norm</node>
+          <type>float</type>         
+          <format>elevator=%03.2f</format>
+        </chunk>
+ 
+       <chunk>
+          <name>altitude autopilot (wip)</name>
+          <node>/autopilot/locks/altitude</node>
+          <type>string</type>
+          <format>%s</format>
+        </chunk>
+ 
+    </output>
+ </generic>
+ </PropertyList>
+
+The tags are briefly described as
+=====<output>=====
+Contains the "formatting" protocol for output. Note that the same file can contain an <input> section also for mapping input protocol/formatting (tutorial maybe soon).
+
+=====<line_separator>=====
+What character(s) to use as a delimiter to "end" our line/blob of data containing the three values. In this example its '''newline''', but '''\n''' is also acceptable as would another other ascii characters, eg '''##EOL##'''.
+
+=====<var_separator>=====
+What character(s) to use as a delimiter of the property values; in this example were using the '''tab''', also '''\t''' is acceptable or even '''@@@'''.
+
+=====<chunk>=====
+There are three chunk tags in this example to reflect the three properties were interested in. IMPORTANT, the chunks are output in the order presented in the xml file.
+
+Within each chuck the tags are described as
+*'''<name>''' - this is for reference and ease of use, is not necassary and, its not transmitted (eg a <notes> tag). It could be useful elsewhere though eg a shared configuration file with another application.
+*'''<node>''' - the property node.
+*'''<type>''' - this is the type of value needed for formatting. In our example the autopilot is a string, whilst the other two values as float. Not setting the type can leads to strange stuff happening.
+*'''<format>''' - the output format. The altitude and elevator are straighforward printf formatting, whilst the autopilot is "autopilot=%s".
+
+There are many other options which are covered in [[Generic Protocol]]
+
+==Start FlightGear to broadcast==
+So with the abc-protocol.xml file ready, FlightGear can be started with
+
+ fgfs --generic=socket,out,5,127.0.0.1,udp,abc-protocol
+
+The '''--generic=socket,out,5,127.0.0.1,udp,abc-protocol''' is the part that runs the socket server and are broken down into the following elements separated by a comma.
+*'''socket''' - tell FlightGear to open a socket
+*'''out''' - to use the socket to output data ie transmit
+*'''5''' - at five times a second
+*'''127.0.0.1''' - on the loopback address
+*'''udp''' - using the udp network protocol
+*'''abc-protocol''' - and using the abc-protocol.xml file
+
+''Gotchas - ensure there are no loose spaces between the items eg''
+ --generic=socket,out,5, 127.0.0.1,udp,abc-protoco
+                        ^ oops
+
+==Simple pyqt client==
+
+ import sys
+ from PyQt4 import QtCore, QtGui, QtNetwork
+  
+ class SocketTest(QtGui.QWidget):
+ 
+    def __init__(self,  parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setWindowTitle("FlightGear - Socket Test")
+        self.setMinimumWidth(500)
+ 
+        layout = QtGui.QVBoxLayout(self)
+ 
+        self.txtSocket = QtGui.QPlainTextEdit()
+        layout.addWidget( self.txtSocket )
+ 
+        self.quitButton = QtGui.QPushButton(self.tr("&Quit"))
+        self.connect(self.quitButton, QtCore.SIGNAL("clicked()"), self, QtCore.SLOT("close()"))
+        layout.addWidget( self.quitButton )
+ 
+        self.listeningSocket = FlightGearListener(self)
+        self.connect(self.listeningSocket, QtCore.SIGNAL("socketDebug"), self.update_debug)
+ 
+    def update_debug(self, txt):
+        self.txtSocket.setPlainText( txt )
+ 
+ 
+ class FlightGearListener(QtCore.QObject):
+ 
+    def __init__(self, parent):
+        QtCore.QObject.__init__(self, parent)
+ 
+        self.socket = QtNetwork.QUdpSocket(self)
+        self.socket.bind(6789)
+        self.connect(self.socket, QtCore.SIGNAL("readyRead()"), self.process_flightgear_datagrams)
+        self.count = 0
+ 
+    def process_flightgear_datagrams(self):
+        while self.socket.hasPendingDatagrams():
+            datagram, host, port = self.socket.readDatagram(self.socket.pendingDatagramSize())
+            print "Recieving>>", self.count
+            debug_string  = "%s\nraw=%s\n" %(self.count, datagram)
+ 
+            properties = datagram.strip().split("\t")
+            for prop in properties:
+                debug_string += "%s\n" % prop
+            self.emit(QtCore.SIGNAL("socketDebug"), debug_string)	
+            self.count += 1
+ 
+ if __name__ == '__main__':
+    app = QtGui.QApplication(sys.argv)
+    widget =  SocketTest()
+    widget.show()
+    sys.exit(app.exec_())
+
+==Example Ajax Protocol==
+ <output>
+      <line_separator>newline</line_separator>
+      <var_separator>,</var_separator>
+ 
+      <chunk>
+         <name>altitude above ground</name>
+         <node>/position/altitude-agl-ft</node>
+         <type>float</type>
+         <format>{altitude:%03.2f}</format>
+       </chunk>
+ 
+      <chunk>
+         <name>altitude autopilot (wip)</name>
+         <node>/autopilot/locks/altitude</node>
+         <type>string</type>
+         <format>{autopilot: '%s'}</format>
+       </chunk>
+ </output>
+
+The above would output:
+ {elevator: 0.00},{autopilot: ''}\n
