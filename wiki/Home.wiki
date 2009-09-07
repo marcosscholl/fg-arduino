@@ -7,27 +7,10 @@ A playground for interfacing Arduino and Flight Gear. Both projects are open sou
 ==Collaboration Enviroment==
 How to make them work together is the interesting part, so after some research on the environment the following has been setup to at leaset get started.
 
- * *fg-ardunio* - the project here on code.google.com. This is for wiki and issues.
- * *fg-arduino* - code hosting at github.com - http://github.com/ac001/fg-arduino/
- * 
+ * *wiki* - Here on google code which your looking at
+ * *issues* - Issue tracker here on google code
+ * *code* - the code is hosted at github.com - *http://github.com/ac001/fg-arduino/*
 
 Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
 
-==Flight==
-Lets start with a typical hypothetical basic training aircraft and the minimum control surfaces required to achieve flying and landing.
- * Engine start
- * Brakes
- * Throttle
- * Rudder
- * Yoke 
- * Flaps
- * maybe landing gear, wipers, etc etc
 
-==Arduino==
-An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove has 
- * 14 digital pins configurable as either input or output
- * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
- * An USB connector to interface with a PC (also provides power)
- * [Arduino] page
-
-[FlightGear]
