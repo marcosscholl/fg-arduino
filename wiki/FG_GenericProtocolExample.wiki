@@ -103,7 +103,7 @@ The '''--generic=socket,out,5,127.0.0.1,udp,abc-protocol''' is the part that run
                         ^ oops
 
 ==Simple pyqt client==
-
+{{{
  import sys
  from PyQt4 import QtCore, QtGui, QtNetwork
   
@@ -157,7 +157,7 @@ The '''--generic=socket,out,5,127.0.0.1,udp,abc-protocol''' is the part that run
     widget =  SocketTest()
     widget.show()
     sys.exit(app.exec_())
-
+}}}
 ==Example Ajax Protocol==
  <output>
       <line_separator>newline</line_separator>
