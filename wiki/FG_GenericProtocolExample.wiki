@@ -1,4 +1,5 @@
 #summary This tutorial is to demonstrate how to create a socket transmitting some FlightGear data live as its running.
+#sidebar TOC
 
 ==Backgrounder==
 FG can transmit data to either a socket or serial port as its running. This is defined in an xml file. This has a supporting application written pyqt 
@@ -183,5 +184,3 @@ The '''--generic=socket,out,5,127.0.0.1,udp,abc-protocol''' is the part that run
 
 The above would output:
  {elevator: 0.00},{autopilot: ''}\n
-
-#sidebar TOC
