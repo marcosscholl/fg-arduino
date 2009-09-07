@@ -9,24 +9,33 @@ Planning. Where do we go from here, what do we want to do with Arduino and Fligh
 
 ==Flight==
 Lets start with a typical hypothetical basic training aircraft and the minimum control surfaces required to achieve flying and landing.
-* Engine start
-* Brakes
-* Throttle
-* Rudder
-* Yoke 
-* Flaps
-* maybe landing gear, wipers, etc etc
+ * Engine start
+ * Brakes
+ * Throttle
+ * Rudder
+ * Yoke 
+ * Flaps
+ * maybe landing gear, wipers, etc etc
 
 ==Arduino Board==
 An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove has 
-* 14 digital pins configurable as either input or output
-* 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
-* An USB connector to interface with a PC (also provides power)
+ * 14 digital pins configurable as either input or output
+ * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
+ * An USB connector to interface with a PC (also provides power)
+ * [Arduino] page
 
 ==Flight Gear==
 A full on flight simulator enviroment running can send/recieve data over a variety of protocols which can be set at startup.
-* Multiplayer - transmits byte packets in multiplayer mode
-* http - interface with a webbrowser
-* telnet - good olde telnet
-* sockets - recive/transmit/bidirection on a socket. Any number of sockets can be setup.
-* serial - communication to USB and serial
+ * Multiplayer - transmits byte packets in multiplayer mode
+ * http - interface with a webbrowser
+ * telnet - good olde telnet
+ * sockets - recive/transmit/bidirection on a socket. Any number of sockets can be setup.
+ * serial - communication to USB and serial
+ * [FlightGear] page
+
+
+==Collaboration==
+How to make them work together is the interesting part, so after some research on the enviroment the following has been setup ([Project Hosting]how that was decided)
+
+ * *fg-ardunio* project here on code.google.com. This is for wiki and issues.
+ * *fg-arduino* code hosting at github.com - http://github.com/ac001/fg-arduino/
