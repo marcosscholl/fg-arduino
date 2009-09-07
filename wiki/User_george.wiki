@@ -1,4 +1,5 @@
 #summary One-sentence summary of this page.
+#labels Phase-Requirements
 
 = Introduction =
 
@@ -39,7 +40,8 @@ We might need a glue script to allow the simpit script to connect to another ser
 
 
 === Serial port access to the Arduino ===
-The Arduino will be programmed with the use of the 
+The Arduino will be programmed with the assistance of [http://groups.google.com/group/connected-community-hackerspace/web/project-aiko---arduino-modular-software-framework AikoLibrary]. Aiko has two very handy features, one being an event handler, the other being [SymbolicExpressions S-Expressions].  
+
 
 
 
