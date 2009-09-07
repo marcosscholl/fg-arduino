@@ -5,11 +5,11 @@ A playground for interfacing Arduino and Flight Gear. Both projects are open sou
 
 
 ==Collaboration Enviroment==
-How to make them work together is the interesting part, so after some research on the environment the following has been setup to get started.
+How to make them work together is the interesting part, so after some research on the environment the following has been setup to at leaset get started.
 
- * *fg-ardunio* project here on code.google.com. This is for wiki and issues.
- * *fg-arduino* code hosting at github.com - http://github.com/ac001/fg-arduino/
- * [User_pedro_hosting_why] Why the above combination] and any other ideas are welcome.
+ * *fg-ardunio* - the project here on code.google.com. This is for wiki and issues.
+ * *fg-arduino* - code hosting at github.com - http://github.com/ac001/fg-arduino/
+ * 
 
 Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
 
