@@ -17,14 +17,14 @@ Lets start with a typical hypothetical basic training aircraft and the minimum c
  * Flaps
  * maybe landing gear, wipers, etc etc
 
-==Arduino Board==
+==Arduino==
 An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove has 
  * 14 digital pins configurable as either input or output
  * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
  * An USB connector to interface with a PC (also provides power)
  * [Arduino] page
 
-==Flight Gear==
+==FlightGear==
 A full on flight simulator enviroment running can send/recieve data over a variety of protocols which can be set at startup.
  * Multiplayer - transmits byte packets in multiplayer mode
  * http - interface with a webbrowser
