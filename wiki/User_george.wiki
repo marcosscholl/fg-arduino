@@ -1,5 +1,4 @@
 #summary One-sentence summary of this page.
-#labels Phase-Requirements
 
 = Introduction =
 
@@ -40,9 +39,44 @@ We might need a glue script to allow the simpit script to connect to another ser
 
 
 === Serial port access to the Arduino ===
-The Arduino will be programmed with the assistance of [http://groups.google.com/group/connected-community-hackerspace/web/project-aiko---arduino-modular-software-framework AikoLibrary]. Aiko has two very handy features, one being an event handler, the other being [SymbolicExpressions S-Expressions].  
+The Arduino will be programmed with the assistance of [http://groups.google.com/group/connected-community-hackerspace/web/project-aiko---arduino-modular-software-framework AikoLibrary]. Aiko has two very handy features, one being an event handler, the other being [SymbolicExpressions S-Expressions] also known as S-Expressions (the hyphen is required to avoid human parse errors).  
 
 
+
+Using S-Expressions makes parsing of the serial stream easier.
+
+Information sent from the serial port is parsed and acted on. 
+
+The gist of it is that there are two format
+
+To Set Pin1 to 1, Pin2 to 2, Pin3 to 3 you'd use the following<br>
+{{{
+((pin1 1)(pin2 2)(pin3 3))
+}}}
+or
+{{{
+(deviceName (a 1) (b 2) (c 3))
+}}}
+to send the request to the Arduino deviceName. While we may not use the second example, it does provide flexibility as needed.
+
+The S-Expression is currently not documented, something I intend to remedy later.
+
+We may use S-Expression through out the system.
+
+== Data Flow Scenarios ==
+
+This is a high level but should explain what is suggested.
+
+==== User flips switch to raise landing gear ====
+Requirements: 
+  # landing gear is connected to Pin3.
+  # Landing gear light is connectted to pin4.
+
+  # Arduino has noted that the state of Pin3 has changed and sends an update to the Host PC as follows:<br>_(pin3=1);_
+  # The computer waits for the semicolon and then parses the string to obtain the substrings pin3 and 1.
+  # The computer then processes that pair to assemble a string to be sent to the FlightGear instance. <br> _1:400:0_<br> Where the first column is the part of the string which we have altered.
+  # In the third column, is the value of landing gear locked property, we will split a similar string to obtain the value. <br> If the value is a one, we pull Pin4 high. _(Pin4 1);_
+ 
 
 
  
