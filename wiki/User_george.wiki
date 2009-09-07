@@ -19,4 +19,28 @@ Later I'd like to emulate
  
 
 = My Sandbox =
-http://www.gstatic.com/codesite/ph/images/defaultlogo.png
+
+== Overview ==
+
+The Arduino uses a virtual serial port to connect over the USB port. 
+<img src="http://cloud.github.com/downloads/georgepatterson/Flightgear-Console/host_computer.jpeg" align="left" alt="host computer diagram" />While the serial port appears to be slow, by carefully determining something which has changed and updatding the value.
+
+We could also cache the responses for queried respones which does not change often. An easy example is the property /sim/aero which is the value of the aircraft in use by the FlightGear player. The parameter can only change when the FlightGear is restarted. There fore we can probably cache it for 30 seconds at a time, to allow for fairly prompt changes when FlightGear is reloaded.
+
+The other extreme is a throttle or rudder pedals need to be more real time. It is of little benefit to cache those values as they may change frequently and needs to be current.
+
+== System Components == 
+
+The simpit script is having to talk to three devices:-
+  * Arduino via serial port
+  * FlightGear via the generic protocol
+  * Telnet interface for debugging and expansion to other programs.<br>
+We might need a glue script to allow the simpit script to connect to another server. This should be fairly straight forward but considered out of scope for the time being.
+
+
+=== Serial port access to the Arduino ===
+The Arduino will be programmed with the use of the 
+
+
+
+ 
