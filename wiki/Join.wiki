@@ -3,6 +3,7 @@
 One of the things that google code hosting coes not allow as yet is to contact the developers. This imho is a failing.
 
 So please send an email to
-pedromorgan at gmail dot com
+
+*pedromorgan* at *gmail* 
 
 We'll be glad to hear ;-)
