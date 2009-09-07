@@ -1,7 +1,7 @@
-#summary The intention of this tutorial is to demonstrate how to create a socket transmitting some FlightGear data live as its running.
+#summary This tutorial is to demonstrate how to create a socket transmitting some FlightGear data live as its running.
 
 =Backgrounder=
-FG can transmit data to either a socket or serial port as its running. This is defined in an xml file.
+FG can transmit data to either a socket or serial port as its running. This is defined in an xml file. This has a supporting application written pyqt 
 
 For this exercise we name it the *abc-protocol* and the data/properties were interested in are:
  * the altitude above ground
