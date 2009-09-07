@@ -1,12 +1,13 @@
-#summary page sumary to go here
-= Introduction =
+==Arduino (AR)==
 
-Add your content here.
+Please prefix all Arduino related pages with *`AR_`*
 
+ * Home page at [http://www.arduino.cc/ arduino.cc]
+ * Language Ref at http://arduino.cc/en/Reference/HomePage
 
-= Details =
+http://arduino.cc/en/uploads/Main/ArduinoDuemilanove.jpg
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove has 
+ * 14 digital pins configurable as either input or output
+ * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
+ * An USB connector to interface with a PC (also provides power)
