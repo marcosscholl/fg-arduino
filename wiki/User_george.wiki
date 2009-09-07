@@ -1,0 +1,20 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+I am a long time FlightGear user since the 0.9.7 days.
+
+
+= Details =
+
+I became interested in this project when I grew dissatisfied with having to reach for the keyboard and mouse for various functions.
+
+I am primarily interested in 
+  * creating a throttle quadrant (in pipeline)
+  * some switches for landing gear and the like. 
+
+Later I'd like to emulate 
+  * engine rpm and fuel usage
+
+
+
