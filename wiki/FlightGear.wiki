@@ -7,9 +7,7 @@ A full on flight simulator environment running can send/receive data over a vari
  * telnet - good olde telnet
  * sockets - recive/transmit/bidirection on a socket. Any number of sockets can be setup.
  * serial - communication to USB and serial
- * [FlightGear] page
+
 
 ==Backgrounder==
 All paramaters of the sim are made available with in a [http://wiki.flightgear.org/index.php/Property_Tree property tree]. 
-
-
