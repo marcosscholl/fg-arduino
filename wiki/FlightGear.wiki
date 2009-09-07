@@ -2,7 +2,7 @@
 _Prefix all FlightGear related pages with_ *FG_* 
 
 
-==FlightGear (FG)==
+==Flight Gear (FG)==
 A full on flight simulator enviroment running can send/recieve data over a variety of protocols which can be set at startup.
  * Multiplayer - transmits byte packets in multiplayer mode
  * http - interface with a webbrowser
