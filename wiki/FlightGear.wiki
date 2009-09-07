@@ -1,4 +1,6 @@
 #summary FlightGear (FG) main page
+#sidebar TOC
+
 _Prefix all FlightGear related pages with_ *FG_* 
 
 
@@ -12,5 +14,3 @@ A full on flight simulator enviroment running can send/recieve data over a varie
  * [FlightGear] page
 
 
-
-#sidebar TOC
