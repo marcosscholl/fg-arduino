@@ -73,12 +73,8 @@ What character(s) to use as a delimiter to "end" our line/blob of data containin
 =====var_separator=====
 What character(s) to use as a delimiter of the property values; in this example were using the '''tab''', also '''\t''' is acceptable or even '''@@@'''.
 
-=====chunk=====
-There are three chunk tags in this example to reflect the three properties were interested in. IMPORTANT, the chunks are output in the order presented in the xml file.
-
-Within each chuck the tags are described as
-=====name=====
- - this is for reference and ease of use, is not necassary and, its not transmitted (eg a _notes_ tag). It could be useful elsewhere though eg a shared configuration file with another application.
+ * *chunk * - There are three chunk tags in this example to reflect the three properties were interested in. IMPORTANT, the chunks are output in the order presented in the xml file. Within each chuck the tags are described as
+ ** *name* - this is for reference and ease of use, is not necassary and, its not transmitted (eg a _notes_ tag). It could be useful elsewhere though eg a shared configuration file with another application.
 
 =====node=====
 - the property node.
