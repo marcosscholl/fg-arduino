@@ -5,9 +5,10 @@ Please prefix all Arduino related pages with *`AR_`*
  * Home page at [http://www.arduino.cc/ arduino.cc]
  * Language Ref at http://arduino.cc/en/Reference/HomePage
 
-http://arduino.cc/en/uploads/Main/ArduinoDuemilanove.jpg
-
-An Arduino board eg the Duemilanove http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove has 
+An Arduino board eg the [http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove Duemilanove]  has 
  * 14 digital pins configurable as either input or output
  * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
  * An USB connector to interface with a PC (also provides power)
+
+
+http://arduino.cc/en/uploads/Main/ArduinoDuemilanove.jpg
