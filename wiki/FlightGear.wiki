@@ -1,6 +1,6 @@
-#summary FlightGear main page
+#summary FlightGear (FG) main page
 
-To make the wiki namespace clean, please prefix all FlightGear related pages with FG_ 
+_Prefix all FlightGear related pages with_ *FG_* 
 
 ===Links===
  * Homepage - http://flightgear.org
