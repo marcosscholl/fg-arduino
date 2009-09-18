@@ -1,13 +1,16 @@
 #summary Ideas for pin usage
 
 = Introduction =
-This page is ideas for pin usage, its WIP so please comment ammend etc.
+This page is ideas for pin usage, and the possible input output combinations
 
 Arduino has 
  * 6 analog inputs
  * 14 digital as either IN or OUT
 
 The issue is really about state and the number of ports to utilize/sacrifice. 
+
+ * *[Parking_Brake]*
+ * *[Throttle]*
 
 For example, the landing gear switch. A flick of this switch would 
  * send a state event  from arduino to FG ie up or down
@@ -55,20 +58,7 @@ It is possible to multiplex the pins for illuminating the six pins. This will sa
  # speed hold
  # speed ? 
 
-=Throttle=
-This is assumed to be a pot like device which fires input to FG. 
-It also needs to move physically as the aircraft may be in autopilot. 
-To control throttle is either in 
- * "manual" mode, 
- * else its in "IAS" hold.  IAS is a switch to enable, and the speed needs to be a rotary switch with led display above.
- * reverse thrust
 
- * analog out = speed
- * analog in = movment
- * digital out = switch for autothrottle
- * digital in = light for auto throttle << we dont need this
- * a rotarty switch that goes from around 80 to max speed and a press action to make it active
- * reverse thrust input as analog
 
 =Parking Brakes=
 Either ON or off
