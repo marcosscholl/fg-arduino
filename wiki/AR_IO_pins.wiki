@@ -28,6 +28,8 @@ So
 =Basics=
 Following are the ideas for the various interfaces to flight gear as primary controls.
 
+[Parking_Brake]
+
 ==Throttle==
 The throttle is the engine power and thrust. There are two ways to control thrust/throttle on an aircraft, either manually by the pilot, or by the autopilot. Whichever is in control, the thrust levers do automatically physically move. 
 
@@ -47,10 +49,7 @@ To control throttle is either in
  * a rotarty switch that goes from around 80 to max speed and a press action to make it active
  * reverse thrust input as analog
 
-=Parking Brakes=
-Either ON or off
- * single digital input > FG
- * single digital output <  to big red bulb from FG
+
 
 =Landing gear=
  * Gear Up/Down switch > digital in to FG
