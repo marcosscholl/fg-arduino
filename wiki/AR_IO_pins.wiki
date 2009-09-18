@@ -50,3 +50,4 @@ Either ON or off
 
 
 =Flaps=
+An analog Switch input that can step maybe 5 or 6 > Fg input as -1.0 thru -0.5 to 0.0
