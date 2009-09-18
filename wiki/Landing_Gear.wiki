@@ -1,0 +1,44 @@
+=Landing Gear=
+
+[http://www.b737.org.uk/images/main_gear_ng_labelled.jpg]
+
+Landing gear is controlled from the cockpit with a lever. Some aircraft don't lift their gear eg crop dusters.
+
+[http://www.atsb.gov.au/publications/investigation_reports/2005/AAIR/images/aair200500167_001.jpg]
+
+A flick of this switch or move of the lever would
+ * send a state event  from arduino to FG ie up or down
+ * FG recieves the signal and changes landing gear state.
+ * and an indicator light on the "plane" cockpit in the SIM will change
+ * A real local led indicator light could be switched on/off Local to switch with no logic to indicate state, just followinfg the siwtch.
+
+The addition to the above would be to aqquire the real local indicator light from FG and that would in probability be a tristate ie
+ * gear up 
+ * gear intermediate
+ * gear down
+
+So
+ # one digital switch IN  to arduino sent to FG - landing gear state
+ # A state out from FG. sent to arduino and a pair of digital OUT to make tristate
+ # 3 digital pins in total
+
+== Alternate Landing Gear Solution ==
+At least one plane in FlightGear is able to fail the landing gear independently for Left, Right and Nose gear.
+
+While introduces more complexity but for a more enjoyable environment.
+
+The indicator states are
+  * Gear up
+  * Gear Down
+  * Gear indicator bulb failed.
+  
+This will require six digital output pins for the lights and one input for the switch.
+
+It is possible to multiplex the pins for illuminating the six pins. This will save I/O pins for other task.
+
+?? is there a set of colours ??
+Glass cockpits just show a prompt on the screen.
+
+
+[http://www.viperpanels.com/wp-content/uploads/2009/08/111111111.jpg]
+ 
