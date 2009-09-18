@@ -28,3 +28,10 @@ It also needs to move physically as the aircraft may be in autopilot.
 To control throttle is either in 
  * "manual" mode, 
  * else its in "IAS" hold.  IAS is a switch to enable, and the speed needs to be a rotary switch with led display above.
+ * reverse thrust
+
+ analog out = speed
+ analog in = movment
+ digital out = switch for autothrottle
+ digital in = light for auto throttle << we dont need this
+ a rotarty switch that goes from around 80 to max speed and a press action to make it active
