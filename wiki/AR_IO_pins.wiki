@@ -1,10 +1,30 @@
 #summary Ideas for pin usage
 
 = Introduction =
+This page is ideas for pin usage, its WIP so pelase comment ammend etc.
 
-We have 
-six analog inputs
-and 14 digital as either IN or OUt
+Arduino has 
+ * 6 analog inputs
+ * 14 digital as either IN or OUT
+
+The issue is really about state and the number of digital ports to utilize/sacrifice. 
+
+For example the landing gear switch. A flick of this switch would 
+ * be tipped, state event is sent from arduino to FG
+ * FG recieves the signal and changes landing gear state.
+ * and indicator light on the "plane" cockpit in the SIM will change
+ * A real local led indicator light could be switched on/off Local to switch with no logic to indicate state
+
+The addition to the above would be to set the real local indicator light from FG and would in probability be a tristate ie
+ * gear up = 
+ * gear intermediate
+ * gear down
+
+So
+ # one digital switch IN  to arduino sent to FG - landing gear state
+ # A state out from FG. sent to arduino and a pair of digital OUT to make tristate
+ # 3 digital pins in total
+
 
 
 ==6 Analog Ports==
