@@ -17,6 +17,7 @@ In outs
  * analog in = thrust level position
 
 This picture below shows a commanded speed of 133knts, the "speed" button switches the autothrottle on or off.
+
 [http://i.ehow.com/images/GlobalPhoto/Articles/2000153/ap_spd_Full.jpg]
 
 Autothrottle Button
@@ -26,5 +27,14 @@ Autothrottle Button
 IAS
 
  * digital in = light for auto throttle << we dont need this
- * a rotarty switch that goes from around 80 to max speed and a press action to make it active
+ * a rotary switch that goes from around 80 to max speed and a press action to make it active
+ * a digital led that displays the speed setting
  * reverse thrust input as analog
+
+==Advice from real pilot required==
+Not sure how the Authothrottle is set. However from observation the following scenario could be applied.
+ * before take off, the pilots set the IAS to for example 200 knots
+ * they take off manual throttle
+ * once in the air and safe hight, the auto throttle button is pressed and the aircraft will then accelerate/decellerate to the IAS.
+ * if the pilots need to change speed, they twist the knob which changes the IAS display to say 250,
+ * the knob is then Pushed, and this command's the aircraft to new speed.
