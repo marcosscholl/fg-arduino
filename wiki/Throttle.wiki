@@ -1,0 +1,30 @@
+=Throttle=
+[http://www.flightsim.com/review/ftoh2002/throttle.jpg]
+
+A real throttle is a physical device that is pushed forward and back.
+
+If the aircraft is under auto-throttle, then the engine thrust and the position of levers are controlled by aircraft system.
+
+This needs to a pot like device which fires input to FG. FG accepts the range 0 to 1 (To be confirmed) 
+
+To control engine power and throttle the following modes can by applied
+ * "manual" mode - ie commanded by the pilots and throttle position
+ * Indicated Air Speed (IAS).  This commands the aircraft to maintain a speed, eg 200 knots , so whether climbing or desceding, the engines will be throttled up or down. The thrust levers will move accordinglly, even in fly by wire.
+ * reverse thrust - another issue for later
+
+In outs
+ * analog out = throttle pot sends value to FG  (does this need to go thru arduino)
+ * analog in = thrust level position
+
+This picture below shows a commanded speed of 133knts, the "speed" button switches the autothrottle on or off.
+[http://i.ehow.com/images/GlobalPhoto/Articles/2000153/ap_spd_Full.jpg]
+
+Autothrottle Button
+ * switch and digital OUT  with indicator light > tips switch in FG
+ * possible indicator back from FG on Autothrottle state.
+
+IAS
+
+ * digital in = light for auto throttle << we dont need this
+ * a rotarty switch that goes from around 80 to max speed and a press action to make it active
+ * reverse thrust input as analog
