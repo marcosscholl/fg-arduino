@@ -25,16 +25,37 @@ So
  # A state out from FG. sent to arduino and a pair of digital OUT to make tristate
  # 3 digital pins in total
 
-=Basics=
-Following are the ideas for the various interfaces to flight gear as primary controls.
+== Alternate Landing Gear Solution ==
+At least one plane in FlightGear is able to fail the landing gear independently for Left, Right and Nose gear.
 
-[Parking_Brake]
+While introduces more complexity but for a more enjoyable environment.
 
-==Throttle==
-The throttle is the engine power and thrust. There are two ways to control thrust/throttle on an aircraft, either manually by the pilot, or by the autopilot. Whichever is in control, the thrust levers do automatically physically move. 
+The indicator states are
+  * Gear up
+  * Gear Down
+  * Gear indicator bulb failed.
+  
+This will require six digital output pins for the lights and one input for the switch.
 
-"Indicated Air Speed" (IAS) is one the autopilots input. Setting the IAS to for example 220knts with the autothrottle button on will make the aircraft engines maintain that speed, whether climbing or descending a few thousand feet, the aircraft will power up or down the engines to maintain the IAS. 
+It is possible to multiplex the pins for illuminating the six pins. This will save I/O pins for other task.
+ 
 
+==6 Analog Ports==
+ # - Throttle
+ # - pitch
+ # - brakes
+ # - mixture
+ # - rudder pedals
+ # - ?
+
+
+==Digital Ports==
+ # Autopilot on
+ # altitude hold
+ # speed hold
+ # speed ? 
+
+=Throttle=
 This is assumed to be a pot like device which fires input to FG. 
 It also needs to move physically as the aircraft may be in autopilot. 
 To control throttle is either in 
@@ -49,7 +70,10 @@ To control throttle is either in
  * a rotarty switch that goes from around 80 to max speed and a press action to make it active
  * reverse thrust input as analog
 
-
+=Parking Brakes=
+Either ON or off
+ * single digital input > FG
+ * single digital output <  to big red bulb from FG
 
 =Landing gear=
  * Gear Up/Down switch > digital in to FG
