@@ -1,4 +1,4 @@
-Flaps are extensions of the wing surface required to fly at low speed.
+Flaps are extensions of the wing surface required to fly at low speed. [http://en.wikipedia.org/wiki/Flap_%28aircraft%29 (wikipedia)]
 
 http://quest.arc.nasa.gov/aero/virtual/demo/aeronautics/tutorial/images/FlapsAilerons.gif
 
@@ -26,6 +26,4 @@ Outputs from flight gear would be the flap position as it takes a few moments fo
 This output could be int eh form of a dial, an led bar, or its on the glass cockpit display.
 
 [http://farm4.static.flickr.com/3111/2636267807_544617ee8d_o.jpg]
-
-
 
