@@ -1,0 +1,18 @@
+#summary Ideas for pin usage
+
+= Introduction =
+
+We have 
+six analog inputs
+and 14 digital as either IN or OUt
+
+
+==Analog Ports==
+1 - Throttle
+2 - pitch
+3 - brakes
+4 - mixture
+5 - rudder pedals
+6 - ?
+
+==Digital Ports==
