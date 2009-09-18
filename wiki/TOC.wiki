@@ -2,5 +2,5 @@
  * [Arduino]
  * [FlightGear]
  * [Controls]
- ** [Parking_Brake]
+  * [Parking_Brake]
  * [Join]
