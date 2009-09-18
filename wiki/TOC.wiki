@@ -3,4 +3,6 @@
  * [FlightGear]
  * [Controls]
   * [Parking_Brake]
+  * [Throttle]
+  * [Flaps]
  * [Join]
