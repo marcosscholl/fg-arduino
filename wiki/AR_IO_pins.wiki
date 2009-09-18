@@ -12,6 +12,7 @@ The issue is really about state and the number of ports to utilize/sacrifice.
  * *[Parking_Brake]*
  * *[Throttle]*
  * *[Flaps]*
+ * *[Landing_Gear]*
 
 For example, the landing gear switch. A flick of this switch would 
  * send a state event  from arduino to FG ie up or down
