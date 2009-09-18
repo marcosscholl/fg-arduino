@@ -39,9 +39,14 @@ To control throttle is either in
 
 =Parking Brakes=
 Either ON or off
- * single digital input to FG
- * single digital Out to big red bulb from Fg
+ * single digital input > FG
+ * single digital output <  to big red bulb from FG
 
 =Landing gear=
- * Gear Up/Down switch > digital in to ardiono
- * Landing gear lights < from FG < tri state, down/intermideatte/up
+ * Gear Up/Down switch > digital in to FG
+ * Landing gear lights < from FG < tri state with down/intermideatte/up ie 2 pins
+
+=Brakes=
+
+
+=Flaps=
