@@ -19,5 +19,8 @@ As a suggested solution, we will not be constantly sending the status of the con
 
 The script that is parsing the information, should be checking to ensure that data is not "flooded" down the serial port. This will lead to more error codes from the Arduino.  
 
+== Input Output Pins ==
+[AR_IO_pins]
+
 ==Links==
 [http://groups.google.com/group/connected-community-hackerspace/web/project-aiko---arduino-modular-software-framework Aiko] - A small modular, event-driven framework for structuring Arduino sketches, such that individual device drivers can be easily componentized and combined into a single application.
