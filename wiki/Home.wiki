@@ -13,4 +13,9 @@ How to make them work together is the interesting part, so after some research o
 
 Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
 
+The idea at the moment is to document each "control" so they their inputs/outouts can be selected as required.
 
+There is a limitation with the number of Arduino ports that are available, for example there could be a few flavours of landing gear.
+
+ # Hardware Lights - this would be a switch that sends a signal to FG to raise/lower and would switch a light on locally. Budget version as only used one digital IN
+ # Soft Version - this would be a switch that send a signal to FG to raise/lower. The lights would be signal from FG to the Arduino with states of up, down or flashing intermediate.
