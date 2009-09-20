@@ -19,3 +19,7 @@ There is a limitation with the number of Arduino ports that are available, for e
 
  # Hardware Lights - this would be a switch that sends a signal to FG to raise/lower and would switch a light on locally. Budget version as only used one digital IN
  # Soft Version - this would be a switch that send a signal to FG to raise/lower. The lights would be signal from FG to the Arduino with states of up, down or flashing intermediate.
+
+==User Pages==
+ * [User_george]
+ * [User_pedro]
