@@ -39,6 +39,19 @@ It is possible to multiplex the pins for illuminating the six pins. This will sa
 ?? is there a set of colours ??
 Glass cockpits just show a prompt on the screen.
 
-
 [http://www.viperpanels.com/wp-content/uploads/2009/08/111111111.jpg]
- 
+
+  Actually I was a little bit overboard. The Seneca II has thre indepentent landing indicators (green or off), however there's a light on the left hand side at the top of the dash. It will be red when the gear is neither up or down and locked.   
+
+Just found an example where you can have three reds as well as three greens.
+
+Taken from http://www.b737.org.uk/landinggear.htm:-
+<blockquote>
+[http://www.b737.org.uk/images/gearleverthumb.jpg] The landing gear panel is located between  the engine instruments and F/O's instrument panel.
+
+The Green lights tell you that the gear is down and locked and the red lights warn you if the landing gear is in disagreement with the gear lever position.
+
+With the gear UP and locked and the lever UP or OFF, all lights should be extinguished.
+
+On a couple of occasions I have seen 3 reds and 3 greens after the gear has been selected down. This was because the telescopic gear handle had not fully compressed back toward the panel. If this happens to you, give it a tap back in and the red lights will extinguish.
+</blockquote>
