@@ -4,21 +4,11 @@ A playground for interfacing Arduino and Flight Gear. Both projects are open sou
  * *[FlightGear Flight Gear]* - is flight simulator at [http://wiki.flightgear.org flightgear.org]
 
 
-==Collaboration Enviroment==
-How to make them work together is the interesting part, so after some research on the environment the following has been setup to at leaset get started.
+The idea at the moment is to document each "control" so they their inputs/outouts can be selected as required and used as interfaces.
 
- * *wiki* - Here on google code which your looking at
- * *issues* - Issue tracker here on google code
- * *code* - the code is hosted at github.com - *http://github.com/ac001/fg-arduino/*
+There is a limitation with the number of Arduino ports that are available, and their interaction with flightgear.
 
-Planning. Where do we go from here, what do we want to do with Arduino and Flight Gear?
-
-The idea at the moment is to document each "control" so they their inputs/outouts can be selected as required.
-
-There is a limitation with the number of Arduino ports that are available, for example there could be a few flavours of landing gear.
-
- # Hardware Lights - this would be a switch that sends a signal to FG to raise/lower and would switch a light on locally. Budget version as only used one digital IN
- # Soft Version - this would be a switch that send a signal to FG to raise/lower. The lights would be signal from FG to the Arduino with states of up, down or flashing intermediate.
+Some of the controls are documentated as to their behaviour.
 
 ==User Pages==
  * [User_george]
