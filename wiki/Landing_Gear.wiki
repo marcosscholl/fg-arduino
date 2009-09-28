@@ -1,12 +1,18 @@
 =Landing Gear=
 
-[http://www.b737.org.uk/images/main_gear_ng_labelled.jpg]
+The landing gear has the following general indication scenario
+ * when their down their green - if there are 6 "wells" then six lights
+ * when their being lifted or lowered their RED
+ * when their up there's no lights
 
-Landing gear is controlled from the cockpit with a lever. Some aircraft don't lift their gear eg crop dusters.
+check this Vid at 1:40
 
-[http://www.atsb.gov.au/publications/investigation_reports/2005/AAIR/images/aair200500167_001.jpg]
+<wiki:video url="http://www.youtube.com/watch?v=klZPGhxTk-s"/>
 
-A flick of this switch or move of the lever would
+Arduino ports ?
+Landing gear is controlled from the cockpit with a lever.
+
+A move of the lever would
  * send a state event  from arduino to FG ie up or down
  * FG recieves the signal and changes landing gear state.
  * and an indicator light on the "plane" cockpit in the SIM will change
@@ -38,6 +44,10 @@ It is possible to multiplex the pins for illuminating the six pins. This will sa
 
 ?? is there a set of colours ??
 Glass cockpits just show a prompt on the screen.
+
+[http://www.b737.org.uk/images/main_gear_ng_labelled.jpg]
+
+[http://www.atsb.gov.au/publications/investigation_reports/2005/AAIR/images/aair200500167_001.jpg]
 
 [http://www.viperpanels.com/wp-content/uploads/2009/08/111111111.jpg]
 
