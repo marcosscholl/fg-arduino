@@ -1,11 +1,14 @@
-
 = Introduction =
 A new flightgear pilot, but a middle aged man still curious about flight, dabbling with electronics, and code from fun. Webdeveloper by day using, ajax, extjs, python, php, pyqt.
 
 Platform is Ubuntu atmo.
 
 = Goal =
-Create a full mostion flight simulator. Not a full on version, but something the size of a bed with a canpoy so me and the other kids can play with being pilots.
+Create a small motion flight simulator. Not a full 6 axis version yet, but something the size of a bed with a canpoy so me and the other kids can play with being pilots.
 
 Idea is to make it role based with a pilot and navigator. Also to make it cheap and the plans available so everyone can play and improve, made out of cardboard upwards with a few leds's and an usb cable ;-)
+
+= The dream =
+Would be to make the plans available, or even a line of supply that would be a Kit u have to assemble yourself to make the machine.
+Everything from the arduino bored, basic hydraulics, leds, switches, monitors, PC. With probably no soldering involved. Means one can tinker.
 
