@@ -13,3 +13,6 @@ Some of the controls are documentated as to their behaviour.
 ==User Pages==
  * [User_george]
  * [User_pedro]
+
+==Areas of interest==
+  * [Autopilot]
