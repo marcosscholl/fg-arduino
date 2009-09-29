@@ -1,0 +1,16 @@
+#summary This page is being developed thanks to lzd772 and his youtube channel http://www.youtube.com/user/lzd772 , below are the edited feedback of the enviroment.
+
+= Introduction =
+The general concept is to create a simple, generic set of buttons, knobs and displays that physically emulate the real thing, this is then fed into the the flight dynamics model of flight gear.
+
+
+==lzd772==
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
