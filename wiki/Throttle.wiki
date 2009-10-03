@@ -1,4 +1,16 @@
 =Throttle=
+--- ldzz772--
+For takeoff, the A/T function is engaged by pressing the TO/GA levers on the thrust levers (for Boeing aircraft).
+The A/T arm switch is on the glareshield....and the A/T button is for re-engaging the autothrottles inflight.
+
+4) It's a bit more complicated that that....the A/T is tied to the FMC for the takeoff phase and it commands the desired thrust. It does not control speed at the moment. Speed is controlled by changing the pitch attitude.
+
+5) Disengaging the A/T will have no effect on speed control....it's a separate system...
+
+Depends on what aircraft.....for a fly-by-wire aircraft, there will be some protection....
+For a conventional aircraft, yes it will allow you
+-----
+
 [http://www.flightsim.com/review/ftoh2002/throttle.jpg]
 
 A real throttle is a physical device that is pushed forward and back.
