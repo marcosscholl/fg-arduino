@@ -1,6 +1,11 @@
 = Introduction =
 The general concept is to create a simple, generic set of buttons, knobs and displays that physically emulate the real thing, this is then fed into the the flight dynamics model of flight gear via arduino, and vice versa. 
 
+Background:
+Autopilot as within physically commanding and aircraft is the norm, 
+
+hence those capabilities would be within FG. However autopilot within FG is the PID process, and does not embrace FMS (Flight Magament Systems) fuels flow cos to airline, et all..
+
 This page is work in progress and being developed with thanks to lzd772 and the youtube channel [http://www.youtube.com/user/lzd772]. So below are the edited feedback of the discussion.
 
 ==Questions with Answers from lzd772==
