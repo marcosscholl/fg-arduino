@@ -1,6 +1,20 @@
 = Parking Brake =
 
-The parking brake is a clamp that locks the wheels. Its important eg after push back as a slight incline would means around 400 tons + passengers slowly going backwards for example.
+The parking brake is a clamp that locks the wheels.  
+
+The general sequence of events within:
+
+Arrival at stand it to
+::
+Rality Check:
+an aircraft of x is actually onthe blocks, theis pretends to make he machine where it is..
+
+
+Aircaft are "locked" by the "chocs", the geeral roututine is fot the following sequence.
+
+
+
+Its important eg after push back as a slight incline would means around 400 tons + passengers slowly going backwards for example.
 
 
 This image below is pilot who forgot to take off the parking brake.
