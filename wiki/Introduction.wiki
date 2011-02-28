@@ -1,14 +1,14 @@
 #summary FlightGear vs Arduino
 
 ==Simulator==
-* The FlightGear simulator runs as an "instance" on a machine
-* FlightGear internally uses a property tree to relate parts to each other
-* The flight dynamics model (FDM) provides these readable values
-* various interfaces interact with the instance
-* Controls move the surfaces within the FDM
-* All values are exposed and manipulated via the property tree
-* the PropertyTree is FlightGear has many nodes
-* similar to a file system its eg /acontrols[0].engine!" (TBA)
+ * The FlightGear simulator runs as an "instance" on a machine
+ * FlightGear internally uses a property tree to relate parts to each other
+ * The flight dynamics model (FDM) provides these readable values
+ * various interfaces interact with the instance
+ * Controls move the surfaces within the FDM
+ * All values are exposed and manipulated via the property tree
+ * the PropertyTree is FlightGear has many nodes
+ * similar to a file system its eg /acontrols[0].engine!" (TBA)
 
 ==Interface==
 There are a few ways to interface with FlightGear but there can be summaries as:
