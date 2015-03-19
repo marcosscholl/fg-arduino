@@ -1,0 +1,18 @@
+#Glareshield is where the autopilot and other controls are
+
+# Introduction #
+The glareshield is a very important aspect, and does what it says on the tin..
+It provides a shadow.. to the instruments blelow.. imagine steering straight into the headlights and sun with no sunglasses....as an as an example
+
+
+Add your content here please....
+
+Generic Autopilot
+
+
+# Details #
+
+Add your content here.  Format your content with:
+  * Text in **bold** or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

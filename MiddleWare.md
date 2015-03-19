@@ -1,0 +1,19 @@
+# Introduction #
+
+Arduino and FlightGear can speak directly to each via serial ? can they ?
+
+## Piggy in the middle ##
+
+So whats envisaged is to get a "test" application running as a piggy in the miiddle.
+
+So for research purposes the following scenario is in mind using python and pyqt.
+
+Application to can speak to flightgear on a port and needs a protocol
+
+
+# Details #
+
+Add your content here.  Format your content with:
+  * Text in **bold** or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

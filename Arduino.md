@@ -1,0 +1,27 @@
+## Arduino (AR) ##
+
+Please prefix all Arduino related pages with **`AR_`**
+
+  * Home page at [arduino.cc](http://www.arduino.cc/)
+  * Language Ref at http://arduino.cc/en/Reference/HomePage
+
+An Arduino board eg the [Duemilanove](http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove)  has
+  * 14 digital pins configurable as either input or output
+  * 6 analog inputs (analog output is by using a digital pin with http://www.arduino.cc/en/Tutorial/PWM)
+  * An USB connector to interface with a PC (also provides power)
+
+The Arduino uses a serial to USB bridge chip which presents a virtual serial port to the host computer. While the serial port appears to be rather slow, the latency of the serial port is low and the amount of data that is being sent is very minimal.
+
+
+### Optimisations ###
+As a suggested solution, we will not be constantly sending the status of the controls, instead we only update the host when something changes or the system asks. This improves the latency as the serial link is not saturated.
+
+The script that is parsing the information, should be checking to ensure that data is not "flooded" down the serial port. This will lead to more error codes from the Arduino.
+
+## Input Output Pins ##
+[AR\_IO\_pins](AR_IO_pins.md)
+
+> [LED driver](http://www.arduino.cc/en/Tutorial/LEDDriver) - powering multiple pins from 4 Digital IO with a 4794 chip.
+
+## Links ##
+  * [Aiko](http://groups.google.com/group/connected-community-hackerspace/web/project-aiko---arduino-modular-software-framework) - A small modular, event-driven framework for structuring Arduino sketches, such that individual device drivers can be easily componentized and combined into a single application.

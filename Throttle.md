@@ -1,0 +1,54 @@
+# Throttle #
+--- ldzz772--
+For takeoff, the A/T function is engaged by pressing the TO/GA levers on the thrust levers (for Boeing aircraft).
+The A/T arm switch is on the glareshield....and the A/T button is for re-engaging the autothrottles inflight.
+
+4) It's a bit more complicated that that....the A/T is tied to the FMC for the takeoff phase and it commands the desired thrust. It does not control speed at the moment. Speed is controlled by changing the pitch attitude.
+
+5) Disengaging the A/T will have no effect on speed control....it's a separate system...
+
+Depends on what aircraft.....for a fly-by-wire aircraft, there will be some protection....
+For a conventional aircraft, yes it will allow you
+
+---
+
+
+![http://www.flightsim.com/review/ftoh2002/throttle.jpg](http://www.flightsim.com/review/ftoh2002/throttle.jpg)
+
+A real throttle is a physical device that is pushed forward and back.
+
+If the aircraft is under auto-throttle, then the engine thrust and the position of levers are controlled by aircraft system.
+
+This needs to a pot like device which fires input to FG. FG accepts the range 0 to 1 (To be confirmed)
+
+To control engine power and throttle the following modes can by applied
+  * "manual" mode - ie commanded by the pilots and throttle position
+  * Indicated Air Speed (IAS).  This commands the aircraft to maintain a speed, eg 200 knots , so whether climbing or desceding, the engines will be throttled up or down. The thrust levers will move accordinglly, even in fly by wire.
+  * reverse thrust - another issue for later
+
+In outs
+  * analog out = throttle pot sends value to FG  (does this need to go thru arduino)
+  * analog in = thrust level position
+
+This picture below shows a commanded speed of 133knts, the "speed" button switches the autothrottle on or off.
+
+![http://i.ehow.com/images/GlobalPhoto/Articles/2000153/ap_spd_Full.jpg](http://i.ehow.com/images/GlobalPhoto/Articles/2000153/ap_spd_Full.jpg)
+
+Autothrottle Button
+  * switch and digital OUT  with indicator light > tips switch in FG
+  * possible indicator back from FG on Autothrottle state.
+
+IAS
+
+  * digital in = light for auto throttle << we dont need this
+  * a rotary switch that goes from around 80 to max speed and a press action to make it active
+  * a digital led that displays the speed setting
+  * reverse thrust input as analog
+
+## Advice from real pilot required ##
+Not sure how the Authothrottle is set. However from observation the following scenario could be applied.
+  * before take off, the pilots set the IAS to for example 200 knots
+  * they take off manual throttle
+  * once in the air and safe hight, the auto throttle button is pressed and the aircraft will then accelerate/decellerate to the IAS.
+  * if the pilots need to change speed, they twist the knob which changes the IAS display to say 250,
+  * the knob is then Pushed, and this command's the aircraft to new speed.
